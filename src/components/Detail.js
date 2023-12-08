@@ -6,7 +6,7 @@ export const Detail = () => {
   const [product, setProduct] = useState(null);
 
   const getProductDetail = async () => {
-    let url = `https://my-json-server.typicode.com/artiiisoot/hnm-example/products/${id}`;
+    let url = `https://my-json-server.typicode.com/sh0402/hnm-example/products/${id}`;
     let res = await fetch(url);
     let data = await res.json();
     setProduct(data);
